@@ -15,22 +15,19 @@ using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
-    public Text levelText;
+    public GameObject levelText;
     public Slider slider;
     public Text loadingText;
     public void changeLevel(int index){
         StartCoroutine(updateProgress(index));
     }
     IEnumerator updateProgress(int index){
-        AsyncOperation operation=SceneManager.LoadSceneAsync(index);
-        levelText.enabled=false;
-        slider.enabled=true;
-        while(!operation.isDone){
-            float progress=Mathf.Clamp01(operation.progress/0.9f);
-            slider.value=progress;
-            loadingText.text=progress*100+"%";
-
-            yield return null;
+        levelText.SetActive(false);
+        for(int i=0;i<10;i++){
+            slider.value=i/10f;
+            loadingText.text=i*10+" %";
+            yield return new WaitForSeconds(1f);
         }
+        SceneManager.LoadScene(index);
     }
 }

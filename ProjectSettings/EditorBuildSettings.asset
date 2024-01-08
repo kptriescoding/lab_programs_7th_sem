@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Prog9/Prog9Lvl1.unity
-    guid: ec4013d6703349ffd856c907fad66f1e
+    path: Assets/Prog9/Prog9.unity
+    guid: 448b6689aaa85a174a8a1790a2d0d3c3
   - enabled: 1
-    path: Assets/PartB/FPSTemplate/Levels/Level1.unity
-    guid: 4f9559eaea76f4d40a47ebdb1554e92d
+    path: Assets/Prog9/Prog9Lvl2.unity
+    guid: 002780b1226ca8d08bc64bc6d0e49f36
   m_configObjects: {}

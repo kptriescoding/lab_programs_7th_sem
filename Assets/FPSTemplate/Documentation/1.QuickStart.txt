@@ -1,0 +1,16 @@
+
+
+Game Save Data
+______________________________
+If you want to delete all playerprefs saved data, Start MainMenu scene and press "H" key to delete  all saved data.
+After that you can see PlayerPrefs.DeleteAll (); Log on unity console.
+Stop scene and start it again to load initial  data for game settings.
+
+
+Game Tags
+______________________________
+Enemy
+AmmoManager
+GunViewCamera
+WeaponGun
+Heli_Spawner

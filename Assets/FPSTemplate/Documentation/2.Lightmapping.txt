@@ -1,0 +1,4 @@
+
+
+If you want to baking lightmaps, just open each scene and press build button on Lighting window. 
+All settings are optimized for mobile devices (updated at Christmas 2022)
